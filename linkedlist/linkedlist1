@@ -1,0 +1,14 @@
+// rather than putting element in continous memory (array) linked list make an block like structure and make block memory for every element in heap
+ // distracted counter :- 3 
+
+// only Node only know 2 thing .. 1 their value  .. 2:- whom they are pointing to
+
+// head means very fisrt node ,, and tail means very last node
+
+ // node has an value with it and that value is pointing to next node 
+//   class Node {
+//     int val;
+//     Node next;
+//   }
+
+// singly linked list = pointing in forward direction 

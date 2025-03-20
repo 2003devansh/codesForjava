@@ -1,0 +1,50 @@
+package BINARY_TREE.DFS;
+
+public class Leetcode230 {
+    public static void main(String[] args) {
+        
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+    int count = 0 ;
+    public TreeNode helper(TreeNode root, int k) {
+         
+
+        if(root == null){
+            return null  ;
+        }
+        TreeNode left = helper(root.left, k) ; 
+
+        if( left != null){
+            return left  ;
+        }
+
+        count++  ;
+        if(count == k ){
+            return root;
+        }
+
+        return helper(root.right, k) ;
+
+
+        
+    }
+
+    public int kthSmallest(TreeNode root, int k) {
+        TreeNode ans = helper(root, k) ;
+        return ans.val ;
+    }
+
+
+}

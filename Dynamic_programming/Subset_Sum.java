@@ -20,7 +20,7 @@ public class Subset_Sum {
                    dp[i][j] = true ; 
                 }
             }
-        }
+        } 
 
         // Fill the DP table
         for (int i = 1; i <= n; i++) {

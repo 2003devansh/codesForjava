@@ -12,7 +12,6 @@ public class maxInWindow {
         int j = 0;
         int ans = Integer.MIN_VALUE;
         int sum = 0;
-
         while (j < arr.length) {
             sum += arr[j];
 
